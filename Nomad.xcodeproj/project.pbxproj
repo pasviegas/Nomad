@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1316202DDD2A49B4AAD1EA82 /* libPods-NomadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7737D575789F4F759A381A22 /* libPods-NomadTests.a */; };
+		5D208FD0052B448FA85E36D5 /* libPods-Nomad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3C0E8A8DE74DC690082994 /* libPods-Nomad.a */; };
+		659B756AF75570F6D98AB4FB /* Maybe.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B72FCC3C83C3B386A62E9 /* Maybe.m */; };
+		659B7AC38A0939755FBD3FDA /* Just.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B7DC8EB45CE0FA5A82691 /* Just.m */; };
 		EB2A8E4E188A85FC0034FFAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A8E4D188A85FC0034FFAA /* Foundation.framework */; };
 		EB2A8E53188A85FC0034FFAA /* Nomad.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB2A8E52188A85FC0034FFAA /* Nomad.h */; };
-		EB2A8E55188A85FC0034FFAA /* Nomad.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2A8E54188A85FC0034FFAA /* Nomad.m */; };
 		EB2A8E5C188A85FC0034FFAA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A8E5B188A85FC0034FFAA /* XCTest.framework */; };
 		EB2A8E5D188A85FC0034FFAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A8E4D188A85FC0034FFAA /* Foundation.framework */; };
 		EB2A8E5F188A85FC0034FFAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A8E5E188A85FC0034FFAA /* UIKit.framework */; };
 		EB2A8E62188A85FC0034FFAA /* libNomad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A8E4A188A85FC0034FFAA /* libNomad.a */; };
 		EB2A8E68188A85FC0034FFAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB2A8E66188A85FC0034FFAA /* InfoPlist.strings */; };
-		EB2A8E6A188A85FC0034FFAA /* NomadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2A8E69188A85FC0034FFAA /* NomadTests.m */; };
+		EB953216188A86F000DB9301 /* NSObject+Maybe.m in Sources */ = {isa = PBXBuildFile; fileRef = EB953215188A86F000DB9301 /* NSObject+Maybe.m */; };
+		EB953218188A870A00DB9301 /* NSObject_MaybeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EB953217188A870A00DB9301 /* NSObject_MaybeSpec.m */; };
+		EB95321C188A880900DB9301 /* Nothing.m in Sources */ = {isa = PBXBuildFile; fileRef = EB95321B188A880900DB9301 /* Nothing.m */; };
+		EB953220188A92D700DB9301 /* MaybeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EB95321F188A92D700DB9301 /* MaybeSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +48,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F3C0E8A8DE74DC690082994 /* libPods-Nomad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Nomad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B72FCC3C83C3B386A62E9 /* Maybe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maybe.m; sourceTree = "<group>"; };
+		659B741CA5569C498B1B0A89 /* Maybe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maybe.h; sourceTree = "<group>"; };
+		659B7DB8405673B3D6CCCD5E /* Just.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Just.h; sourceTree = "<group>"; };
+		659B7DC8EB45CE0FA5A82691 /* Just.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Just.m; sourceTree = "<group>"; };
+		76A888FCBFA44CB9B7C4D787 /* Pods-Nomad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nomad.xcconfig"; path = "Pods/Pods-Nomad.xcconfig"; sourceTree = "<group>"; };
+		7737D575789F4F759A381A22 /* libPods-NomadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NomadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95ED3E378DFD44F09BAFCAB5 /* Pods-NomadTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomadTests.xcconfig"; path = "Pods/Pods-NomadTests.xcconfig"; sourceTree = "<group>"; };
 		EB2A8E4A188A85FC0034FFAA /* libNomad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNomad.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2A8E4D188A85FC0034FFAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB2A8E51188A85FC0034FFAA /* Nomad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nomad-Prefix.pch"; sourceTree = "<group>"; };
 		EB2A8E52188A85FC0034FFAA /* Nomad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nomad.h; sourceTree = "<group>"; };
-		EB2A8E54188A85FC0034FFAA /* Nomad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nomad.m; sourceTree = "<group>"; };
 		EB2A8E5A188A85FC0034FFAA /* NomadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2A8E5B188A85FC0034FFAA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EB2A8E5E188A85FC0034FFAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EB2A8E65188A85FC0034FFAA /* NomadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NomadTests-Info.plist"; sourceTree = "<group>"; };
 		EB2A8E67188A85FC0034FFAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EB2A8E69188A85FC0034FFAA /* NomadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NomadTests.m; sourceTree = "<group>"; };
+		EB953214188A86F000DB9301 /* NSObject+Maybe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Maybe.h"; sourceTree = "<group>"; };
+		EB953215188A86F000DB9301 /* NSObject+Maybe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Maybe.m"; sourceTree = "<group>"; };
+		EB953217188A870A00DB9301 /* NSObject_MaybeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_MaybeSpec.m; sourceTree = "<group>"; };
+		EB953219188A87D800DB9301 /* Functor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Functor.h; path = Protocols/Functor.h; sourceTree = "<group>"; };
+		EB95321A188A880900DB9301 /* Nothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nothing.h; sourceTree = "<group>"; };
+		EB95321B188A880900DB9301 /* Nothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nothing.m; sourceTree = "<group>"; };
+		EB95321F188A92D700DB9301 /* MaybeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaybeSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2A8E4E188A85FC0034FFAA /* Foundation.framework in Frameworks */,
+				5D208FD0052B448FA85E36D5 /* libPods-Nomad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 				EB2A8E5F188A85FC0034FFAA /* UIKit.framework in Frameworks */,
 				EB2A8E5D188A85FC0034FFAA /* Foundation.framework in Frameworks */,
 				EB2A8E62188A85FC0034FFAA /* libNomad.a in Frameworks */,
+				1316202DDD2A49B4AAD1EA82 /* libPods-NomadTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,8 @@
 				EB2A8E63188A85FC0034FFAA /* NomadTests */,
 				EB2A8E4C188A85FC0034FFAA /* Frameworks */,
 				EB2A8E4B188A85FC0034FFAA /* Products */,
+				76A888FCBFA44CB9B7C4D787 /* Pods-Nomad.xcconfig */,
+				95ED3E378DFD44F09BAFCAB5 /* Pods-NomadTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +126,8 @@
 				EB2A8E4D188A85FC0034FFAA /* Foundation.framework */,
 				EB2A8E5B188A85FC0034FFAA /* XCTest.framework */,
 				EB2A8E5E188A85FC0034FFAA /* UIKit.framework */,
+				4F3C0E8A8DE74DC690082994 /* libPods-Nomad.a */,
+				7737D575789F4F759A381A22 /* libPods-NomadTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,8 +135,10 @@
 		EB2A8E4F188A85FC0034FFAA /* Nomad */ = {
 			isa = PBXGroup;
 			children = (
+				EB953222188A9D8700DB9301 /* Either */,
+				EB953221188A9D4B00DB9301 /* Maybe */,
+				EB953212188A86AE00DB9301 /* Protocols */,
 				EB2A8E52188A85FC0034FFAA /* Nomad.h */,
-				EB2A8E54188A85FC0034FFAA /* Nomad.m */,
 				EB2A8E50188A85FC0034FFAA /* Supporting Files */,
 			);
 			path = Nomad;
@@ -128,8 +155,9 @@
 		EB2A8E63188A85FC0034FFAA /* NomadTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB2A8E69188A85FC0034FFAA /* NomadTests.m */,
 				EB2A8E64188A85FC0034FFAA /* Supporting Files */,
+				EB953217188A870A00DB9301 /* NSObject_MaybeSpec.m */,
+				EB95321F188A92D700DB9301 /* MaybeSpec.m */,
 			);
 			path = NomadTests;
 			sourceTree = "<group>";
@@ -143,6 +171,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB953212188A86AE00DB9301 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB953219188A87D800DB9301 /* Functor.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		EB953221188A9D4B00DB9301 /* Maybe */ = {
+			isa = PBXGroup;
+			children = (
+				EB95321A188A880900DB9301 /* Nothing.h */,
+				EB95321B188A880900DB9301 /* Nothing.m */,
+				EB953214188A86F000DB9301 /* NSObject+Maybe.h */,
+				EB953215188A86F000DB9301 /* NSObject+Maybe.m */,
+				659B72FCC3C83C3B386A62E9 /* Maybe.m */,
+				659B741CA5569C498B1B0A89 /* Maybe.h */,
+				659B7DC8EB45CE0FA5A82691 /* Just.m */,
+				659B7DB8405673B3D6CCCD5E /* Just.h */,
+			);
+			name = Maybe;
+			sourceTree = "<group>";
+		};
+		EB953222188A9D8700DB9301 /* Either */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Either;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB2A8E6D188A85FC0034FFAA /* Build configuration list for PBXNativeTarget "Nomad" */;
 			buildPhases = (
+				B0C22B92977A4FF9A0643C91 /* Check Pods Manifest.lock */,
 				EB2A8E46188A85FC0034FFAA /* Sources */,
 				EB2A8E47188A85FC0034FFAA /* Frameworks */,
 				EB2A8E48188A85FC0034FFAA /* CopyFiles */,
+				E927BC4152F649C784D29EB5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB2A8E70188A85FC0034FFAA /* Build configuration list for PBXNativeTarget "NomadTests" */;
 			buildPhases = (
+				4BA0AEE7A3834CB4A4D0B40F /* Check Pods Manifest.lock */,
 				EB2A8E56188A85FC0034FFAA /* Sources */,
 				EB2A8E57188A85FC0034FFAA /* Frameworks */,
 				EB2A8E58188A85FC0034FFAA /* Resources */,
+				F0D0CAEEC03C4C0BB70E36A3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +281,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BA0AEE7A3834CB4A4D0B40F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C22B92977A4FF9A0643C91 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E927BC4152F649C784D29EB5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Nomad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D0CAEEC03C4C0BB70E36A3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-NomadTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB2A8E46188A85FC0034FFAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2A8E55188A85FC0034FFAA /* Nomad.m in Sources */,
+				EB953216188A86F000DB9301 /* NSObject+Maybe.m in Sources */,
+				EB95321C188A880900DB9301 /* Nothing.m in Sources */,
+				659B756AF75570F6D98AB4FB /* Maybe.m in Sources */,
+				659B7AC38A0939755FBD3FDA /* Just.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2A8E6A188A85FC0034FFAA /* NomadTests.m in Sources */,
+				EB953218188A870A00DB9301 /* NSObject_MaybeSpec.m in Sources */,
+				EB953220188A92D700DB9301 /* MaybeSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +459,7 @@
 		};
 		EB2A8E6E188A85FC0034FFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A888FCBFA44CB9B7C4D787 /* Pods-Nomad.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Nomad.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -342,6 +472,7 @@
 		};
 		EB2A8E6F188A85FC0034FFAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A888FCBFA44CB9B7C4D787 /* Pods-Nomad.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Nomad.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -354,6 +485,7 @@
 		};
 		EB2A8E71188A85FC0034FFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95ED3E378DFD44F09BAFCAB5 /* Pods-NomadTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -375,6 +507,7 @@
 		};
 		EB2A8E72188A85FC0034FFAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95ED3E378DFD44F09BAFCAB5 /* Pods-NomadTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -409,6 +542,7 @@
 				EB2A8E6F188A85FC0034FFAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB2A8E70188A85FC0034FFAA /* Build configuration list for PBXNativeTarget "NomadTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +551,7 @@
 				EB2A8E72188A85FC0034FFAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
