@@ -27,6 +27,30 @@ describe(@"Maybe", ^{
         }];
         [[[result unwrap] should] beNil];
     });
+
+    it(@"should execute the function when value is not nil", ^{
+        Maybe * result = [[Maybe maybe:@1] foldMap:^id(NSNumber * init,  NSNumber * cur) {
+            return [NSNumber numberWithInt:[init intValue] + [cur intValue]];
+        } onto:[Maybe maybe:@2]];
+
+        [[[result unwrap] should] equal:@3];
+    });
+
+    it(@"should return Nothing the function when value is nil", ^{
+        Maybe * result = [[Maybe maybe:nil] foldMap:^id(NSNumber * init,  NSNumber * cur) {
+            return [NSNumber numberWithInt:[init intValue] + [cur intValue]];
+        } onto:[Maybe maybe:@2]];
+
+        [[[result unwrap] should] beNil];
+    });
+
+    it(@"should return Nothing the function when value is nil", ^{
+        Maybe * result = [[Maybe maybe:@1] foldMap:^id(NSNumber * init,  NSNumber * cur) {
+            return [NSNumber numberWithInt:[init intValue] + [cur intValue]];
+        } onto:[Maybe mempty]];
+
+        [[[result unwrap] should] beNil];
+    });
 });
 
 

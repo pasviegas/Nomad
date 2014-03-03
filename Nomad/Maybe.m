@@ -18,5 +18,16 @@
     return [[Nothing alloc] init];
 }
 
++ (id <Monoid>)mempty {
+    return [[Nothing alloc] init];
+}
+
+- (id <Monoid>)foldMap:(FoldMapArrow)f {
+    //foldr (mappend . f) mempty;
+    return [self foldr:^id(id init, id curr) {
+        return [init mappend:f([curr unwrap])];
+    } onto:[Maybe mempty]];
+}
+
 
 @end

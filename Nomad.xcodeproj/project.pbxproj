@@ -51,6 +51,8 @@
 		4F3C0E8A8DE74DC690082994 /* libPods-Nomad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Nomad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		659B72FCC3C83C3B386A62E9 /* Maybe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maybe.m; sourceTree = "<group>"; };
 		659B741CA5569C498B1B0A89 /* Maybe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maybe.h; sourceTree = "<group>"; };
+		659B7C2D3E2B04962CCB6ED3 /* Monoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monoid.h; sourceTree = "<group>"; };
+		659B7D34AF8C0D6CC413BED3 /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foldable.h; sourceTree = "<group>"; };
 		659B7DB8405673B3D6CCCD5E /* Just.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Just.h; sourceTree = "<group>"; };
 		659B7DC8EB45CE0FA5A82691 /* Just.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Just.m; sourceTree = "<group>"; };
 		76A888FCBFA44CB9B7C4D787 /* Pods-Nomad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nomad.xcconfig"; path = "Pods/Pods-Nomad.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		659B7E18D509DE803092B7DC /* Foldables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foldables;
+			sourceTree = "<group>";
+		};
 		EB2A8E41188A85FC0034FFAA = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +149,7 @@
 				EB953212188A86AE00DB9301 /* Protocols */,
 				EB2A8E52188A85FC0034FFAA /* Nomad.h */,
 				EB2A8E50188A85FC0034FFAA /* Supporting Files */,
+				659B7E18D509DE803092B7DC /* Foldables */,
 			);
 			path = Nomad;
 			sourceTree = "<group>";
@@ -175,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				EB953219188A87D800DB9301 /* Functor.h */,
+				659B7C2D3E2B04962CCB6ED3 /* Monoid.h */,
+				659B7D34AF8C0D6CC413BED3 /* Foldable.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";

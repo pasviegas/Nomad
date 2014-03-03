@@ -4,8 +4,7 @@
 //
 
 #import "NSObject+Maybe.h"
-#import "Nothing.h"
-
+#import "Maybe.h"
 
 @implementation NSObject (Maybe)
 
@@ -14,11 +13,7 @@
     if (cont) {
         return cont;
     }
-    return [self nothing];
-}
-
-- (Nothing *)nothing {
-    return [[Nothing alloc] init];
+    return [Maybe mempty];
 }
 
 @end

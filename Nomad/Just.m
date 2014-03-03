@@ -4,6 +4,7 @@
 //
 
 #import "Just.h"
+#import "Nothing.h"
 
 
 @implementation Just {
@@ -14,10 +15,20 @@
     return [Maybe maybe:f(_val)];
 }
 
-- (id)unwrap{
+- (id <Monoid>)mappend:(id <Monoid>)val {
+    if ([val class] == [Nothing class]) {
+        return self;
+    }
+    return [Maybe maybe:[_val mappend:val]];
+}
+
+- (id)foldr:(FoldArrow)f onto:(id)initial {
+    return [super foldr:f onto:initial];
+}
+
+- (id)unwrap {
     return _val;
 };
-
 
 - (instancetype)initWith:(id)val {
     self = [super init];

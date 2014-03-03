@@ -4,9 +4,12 @@
 //
 
 #import "Functor.h"
+#import "Monoid.h"
+#import "Foldable.h"
 
-@interface Maybe : NSObject <Functor>
+@interface Maybe : NSObject <Functor, Foldable>
 
 + (Maybe *)maybe:(id)val;
+- (id <Monoid>)foldMap:(FoldMapArrow)f;
 
 @end

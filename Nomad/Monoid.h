@@ -5,9 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef id (^FunctorArrow)(id);
-
-@protocol Functor <NSObject>
-- (id)fmap:(FunctorArrow)f;
-- (id)unwrap;
+@protocol Monoid
+- (id<Monoid>)mappend:(id<Monoid>)val;
++ (id<Monoid>)mempty;
 @end
